@@ -1,0 +1,70 @@
+html, body {
+    height:100%;
+    text-align: center;
+}
+
+button {
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#main {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+#calc-body {
+    height: 60%;
+    width: 25%;
+    margin-left: 50%;
+    margin-right:50%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap:2px;
+}
+
+#display {
+    display: flex;
+}
+
+.operand {
+
+}
+
+.operator {
+
+}
+
+#equals {
+
+}
+
+#decimal {
+
+}
+
+#clear {
+
+}
+
+#sign {
+
+}
+
+#percent {
+
+}
+
+#zero {
+    grid-column: span 2;
+
+}
+
+#backspace {
+
+}
