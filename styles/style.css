@@ -1,11 +1,20 @@
+:root {
+    --forest: #4c8077;
+    --operand: #63baab;
+    --operator: #c4fcf0;
+    --display: #fceaff;
+}
+
 html, body {
     height:100%;
     text-align: center;
+    box-sizing: border-box;
 }
 
-button {
-    margin: 1px;
-    border-radius: 5px;
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 #main {
@@ -17,54 +26,99 @@ button {
 }
 
 #calc-body {
-    height: 60%;
-    width: 25%;
-    margin-left: 50%;
-    margin-right:50%;
-    background-color: black;
+    background-color: #651ddc;
+    border: 5px solid #937bad;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 50%;
+}
+
+.display {
+    width: 100%;
+    font-size: 5rem;
+    height: 25%;
+    border: none;
+    background-color: var(--display);
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.calc-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap:2px;
+    grid-gap: 5px;
+    padding: 5px;
 }
 
-#display {
-    display: flex;
-}
-
-.operand {
-
+button {
+    height: 65px;
+    border-radius: 3px;
+    font-size: 2rem;
 }
 
 .operator {
-
+    background-color: var(--operator);
 }
 
-#equals {
-
+.operator:hover {
+    background-color: #d2fff5;
 }
 
-#decimal {
-
+.operand {
+    background-color: var(--operand);
 }
 
-#clear {
-
+.operand:hover {
+    background-color: #81bdb3;
 }
 
-#sign {
-
+.all-clear {
+    background-color: var(--forest);
 }
 
-#percent {
+.all-clear:hover {
+    background-color: #5c807a;
+}
 
+.sign {
+    background-color: var(--forest);
+}
+
+.sign:hover {
+    background-color: #5c807a;
+}
+
+.percent {
+    background-color: var(--forest);
+}
+
+.percent:hover {
+    background-color: #5c807a;
+}
+
+.equals {
+    background-color: var(--forest);
+}
+
+.equals:hover {
+    background-color: #5c807a;
+}
+
+.decimal {
+    background-color: var(--forest);
+}
+
+.decimal:hover {
+    background-color: #5c807a;
 }
 
 #zero {
-    grid-column: span 2;
-
-}
-
-#backspace {
-
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
