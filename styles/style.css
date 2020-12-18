@@ -102,11 +102,11 @@ button {
     background-color: #5c807a;
 }
 
-.equals {
+.equals operator {
     background-color: var(--forest);
 }
 
-.equals:hover {
+.equals operator:hover {
     background-color: #5c807a;
 }
 
