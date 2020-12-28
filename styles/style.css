@@ -80,6 +80,7 @@ button {
 
 .all-clear {
     background-color: var(--forest);
+    grid-area: 1 / 1 / 1 / 4;
 }
 
 .all-clear:hover {
@@ -91,14 +92,6 @@ button {
 }
 
 .sign:hover {
-    background-color: #5c807a;
-}
-
-.percent {
-    background-color: var(--forest);
-}
-
-.percent:hover {
     background-color: #5c807a;
 }
 
