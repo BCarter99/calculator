@@ -45,19 +45,8 @@ keys.addEventListener('click', (event) => {
     updateDisplay();
 });
 
-    if (target.classList.contains('sign')) {
-        console.log('sign', target.value);
-        return;
-    }
-
-    if (target.classList.contains('percent')) {
-        console.log('percent', target.value);
-        return;
-    }
-
-    inputDigit(target.value);
-    updateDisplay();
-});
+inputDigit(target.value);
+updateDisplay();
 
 function inputDigit(digit) {
     const { displayValue, waitingForSecondOperand } = calculator;
